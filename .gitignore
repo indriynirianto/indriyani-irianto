@@ -28,6 +28,9 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# agy internal coordination
+/.agy-coordinator/
+
 # vercel
 .vercel
 

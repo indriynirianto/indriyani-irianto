@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const links = [
   { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -18,7 +19,7 @@ export default function Navbar() {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
 
-      const sections = ["home", "skills", "projects", "contact"];
+      const sections = ["home", "about", "skills", "projects", "contact"];
       for (const id of sections.reverse()) {
         const el = document.getElementById(id);
         if (el && window.scrollY >= el.offsetTop - 120) {
