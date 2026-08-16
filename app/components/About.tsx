@@ -161,6 +161,43 @@ export default function About() {
               ))}
             </motion.div>
 
+            {/* Education (Fade-up delay: 0.5s) */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+                <h3 className="text-xs font-semibold tracking-[0.25em] text-blue-400 uppercase">
+                  EDUCATION
+                </h3>
+              </div>
+
+              <div className="glass-card rounded-2xl p-5 md:p-6 border border-white/10 hover:border-blue-500/30 hover:shadow-[0_16px_40px_rgba(0,0,0,0.6),0_0_20px_rgba(59,130,246,0.15)] transition-all duration-300">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    <h4 className="text-white font-semibold text-base md:text-lg">
+                      S1 Computer Science
+                    </h4>
+                    <span className="project-tag shadow-[0_0_10px_rgba(59,130,246,0.15)]">
+                      President University
+                    </span>
+                  </div>
+                  <span className="font-mono text-xs font-medium text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
+                    2025 - Sekarang
+                  </span>
+                </div>
+                <p className="text-sm text-slate-300 leading-relaxed mt-3">
+                  Lagi nempuh S1 Computer Science di President University — fokus
+                  bikin aplikasi web modern dari frontend sampai backend, sambil
+                  eksplor AI, algoritma, dan UI/UX design lewat project-project
+                  kuliah yang seru.
+                </p>
+              </div>
+            </motion.div>
+
             {/* Experience timeline (Fade-up delay: 0.6s) */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}

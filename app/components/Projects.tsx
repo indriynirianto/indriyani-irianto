@@ -4,6 +4,39 @@ import { useState } from "react";
 
 const projects = [
   {
+    title: "Lore-AI",
+    description:
+      "A luxury fragrance recommendation web app that suggests perfumes based on your personality. Includes an AI chat assistant, shopping links, and an admin panel to manage a growing perfume database.",
+    tags: ["PHP", "MySQL", "Groq", "AI Chat"],
+    category: "AI / ML",
+    link: "#",
+    gradient: "from-violet-600/20 to-fuchsia-600/10",
+    icon: "❋",
+    featured: true,
+  },
+  {
+    title: "Hobby Match",
+    description:
+      "A social platform that matches people by their hobbies. Create a profile, discover friends who share your interests, and connect through real-time chat and calls.",
+    tags: ["React", "Node.js", "Socket.io"],
+    category: "Full Stack",
+    link: "#",
+    gradient: "from-pink-600/15 to-rose-600/10",
+    icon: "♡",
+    featured: true,
+  },
+  {
+    title: "Sahabat Cafe",
+    description:
+      "Official website for Sahabat Café, the campus café right next to President University. Built as a first-semester team project — showcasing the menu, the vibe, and bringing the campus hangout online.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "Full Stack",
+    link: "#",
+    gradient: "from-amber-600/15 to-orange-600/10",
+    icon: "☕",
+    featured: true,
+  },
+  {
     title: "AlgoViz Studio",
     description:
       "An interactive algorithm visualization platform. Watch Dijkstra, BFS, DFS, and sorting algorithms come to life with step-by-step animations and real-time complexity analysis.",
